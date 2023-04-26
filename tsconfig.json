@@ -23,11 +23,13 @@
 
     "baseUrl": "./src",
     "paths": {
-      "@/*": ["*"],
       "@components/*": ["components/*"],
+      "@containers/*": ["containers/*"],
+      "@pages/*": ["pages/*"],
       "@typings/*": ["types/*"],
       "@theme/*": ["theme/*"],
-  },
+      "src/*": ["/*"],
+    },
   },
   "include": ["src", "**/*.ts", "**/*.tsx"],
   "references": [{ "path": "./tsconfig.node.json" }]

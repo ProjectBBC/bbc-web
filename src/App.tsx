@@ -1,21 +1,12 @@
-import { Box } from '@chakra-ui/react'
-import MainNavigation from '@components/MainNavigation'
-import Footer from '@components/Footer'
+import { BrowserRouter } from "react-router-dom";
+import Root from "@containers/Root";
 
-interface IProps {
-  children: React.ReactNode
+function App() {
+    return (
+        <BrowserRouter>
+            <Root />
+        </BrowserRouter>
+    );
 }
 
-function App({children}: IProps) {
-  return (
-    <Box>
-      <MainNavigation />
-      <Box>
-        {children}
-      </Box>
-      <Footer />
-    </Box>
-  )
-}
-
-export default App
+export default App;
